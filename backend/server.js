@@ -43,7 +43,8 @@ app.post('/api/contact', async (req, res) => {
 });
 
 app.get('/',(req,res)=>{
-  res.send('Hello World!')
+  res.redirect(process.env.FRONTEND_URL);
+
 })
 
 // Start Server
