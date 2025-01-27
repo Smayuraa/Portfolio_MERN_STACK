@@ -10,10 +10,17 @@ const Home = () => {
         <div className="text-animate">
           <h3>Full Stack Developer</h3>
         </div>
-        <p>
-        "Self-driven and detail-oriented software developer with a strong foundation in<br></br>  full-stack development and 
-        a passion for creating innovative solutions. Skilled in <br></br> problem-solving and delivering impactful results through technical expertise."
-        </p>
+       
+        <p className="home-paragraph">
+  Self-driven and detail-oriented software developer with a strong foundation in<br /> 
+  full-stack development and a passion for creating innovative solutions. Skilled in <br />
+  problem-solving and delivering impactful results through technical expertise.
+</p>
+
+<p className="home-paragraph-short">
+  "Self-driven software developer with a passion for creating innovative solutions."
+</p>
+
         <div className="btn-box">
           <a href="tel:+919503719201" className="btn">Hire Me</a>
           <a href="#contact" className="btn">Let's Talk</a>
