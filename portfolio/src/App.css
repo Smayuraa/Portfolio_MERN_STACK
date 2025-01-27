@@ -392,27 +392,6 @@ section
     width: 80%;
   }
 }
-.home-paragraph {
-  font-size: 1.6rem;
-  margin: 2rem 0 4rem;
-}
-
-.home-paragraph-short {
-  font-size: 1.6rem;
-  margin: 2rem 0 4rem;
-  display: none; /* Hide by default */
-}
-
-/* Show short version on smaller screens */
-@media (max-width: 768px) {
-  .home-paragraph {
-    display: none; /* Hide the long paragraph */
-  }
-
-  .home-paragraph-short {
-    display: block; /* Show the short paragraph */
-  }
-}
 
 
 .about
