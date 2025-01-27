@@ -21,15 +21,18 @@ const Projects = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log('Submitting:', formData); // Debugging
     try {
-      const response = await axios.post(`${import.meta.env.VITE_BACKEND_LINK}/api/contact`, formData);
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_LINK}/contact`, formData);
+      console.log('Response:', response.data); // Debugging
       alert(response.data.message);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       alert('Failed to submit the form');
-      console.error(error);
+      console.error('Error:', error); // Detailed error
     }
   };
+  
   return (
    <>
     <section className="projects" id="projects">
