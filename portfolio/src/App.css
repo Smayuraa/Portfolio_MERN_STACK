@@ -298,8 +298,8 @@ section
 @media (max-width: 768px) {
   .home {
     padding: 0 3%;
-    background-size: 25rem;
-    background-position: right;
+    background-size: none;
+    background-position: none;
   }
 
   .home-content {
@@ -345,8 +345,8 @@ section
   }
 
   .home-sci a {
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 60%;
     font-size: 26px;
   }
 
