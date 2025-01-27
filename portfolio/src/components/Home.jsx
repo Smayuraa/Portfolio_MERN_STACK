@@ -11,8 +11,8 @@ const Home = () => {
           <h3>Full Stack Developer</h3>
         </div>
         <p>
-        "Self-driven and detail-oriented software developer with a strong foundation in<br></br>  full-stack development and 
-        a passion for creating innovative solutions. Skilled in <br></br> problem-solving and delivering impactful results through technical expertise."
+        Self-driven and detail-oriented software developer with a strong foundation in<br></br>  full-stack development and 
+        a passion for creating innovative solutions. Skilled in <br></br> problem-solving and delivering impactful results through technical expertise.
         </p>
         
         <div className="btn-box">
