@@ -1040,14 +1040,15 @@ h1 {
       opacity: 1;
   }
 }
-.contact{
+.contact {
   background-color: #112e42;
+  padding: 20px 0;
 }
 
 .contact-form-container {
   max-width: 90%;
   width: 400px;
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -1056,9 +1057,8 @@ h1 {
 
 @media (max-width: 600px) {
   .contact-form-container {
-    width: 95%;
+    width: 100%; /* Full width for small devices */
     padding: 15px;
-    margin-right: 50%;
   }
 }
 
@@ -1120,5 +1120,5 @@ h1 {
 }
 
 .form-button:hover {
-  background-color:#00abf0 ;
+  background-color: #00abf0;
 }
