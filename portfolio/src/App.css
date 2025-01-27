@@ -253,11 +253,13 @@ section
   }
 
   .home-content h1 {
-    font-size: 4.5rem;
+    font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
   }
 
   .home-content .text-animate h3 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   .home-content p {
@@ -272,7 +274,7 @@ section
   }
 
   .btn-box .btn {
-    width: 12rem;
+    width: 5rem;
     font-size: 1.6rem;
   }
 
@@ -306,7 +308,9 @@ section
   }
 
   .home-content h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
   }
 
   .home-content .text-animate h3 {
@@ -342,7 +346,7 @@ section
   }
 
   .home-imgHover {
-    width: 70%;
+    width: 40%;
   }
 }
 
