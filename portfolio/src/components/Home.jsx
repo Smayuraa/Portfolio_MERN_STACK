@@ -16,7 +16,7 @@ const Home = () => {
         </p>
         <div className="btn-box">
           <a href="tel:+919503719201" className="btn">Hire Me</a>
-          <a href="contact.jsx" className="btn">Let's Talk</a>
+          <a href="#contact" className="btn">Let's Talk</a>
         </div>
       </div>
 
