@@ -22,7 +22,7 @@ const Projects = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${import.meta.env.Backend_Link}/api/contact`, formData);
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_LINK}/api/contact`, formData);
       alert(response.data.message);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
