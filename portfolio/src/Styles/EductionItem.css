@@ -1,0 +1,60 @@
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    background-color:#081b29;
+    color: #ffffff;
+  }
+  
+  @media (min-width: 768px) {
+    .timeline-container {
+      flex-direction: row;
+      gap: 40px;
+      justify-content: space-between;
+    }
+  }
+  
+  .timeline-section {
+    flex: 1;
+    margin-bottom: 40px;
+  }
+  
+  .section-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #22d3ee;
+    display: inline-block;
+  }
+  
+  .timeline-item {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #22d3ee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timeline-year {
+    display: flex;
+    align-items: center;
+    color: #22d3ee;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-icon {
+    margin-right: 8px;
+  }
+  
+  .timeline-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .timeline-description {
+    color: #cbd5e1;
+    line-height: 1.5;
+  }
+  

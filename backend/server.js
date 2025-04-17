@@ -1,14 +1,38 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-require('dotenv').config();
+import express from 'express';
+import mongoose from 'mongoose';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+dotenv.config();
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+
 
 const app = express();
 
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
+
+app.use(
+  cors({
+    origin: true,
+    credentials: true,
+  })
+);
+
+
+app.use(express.static(path.join(__dirname,"../portfolio/dist")));
+app.get('*',(req,res)=>{
+  res.sendFile(path.resolve(__dirname,"../portfolio/dist/index.html"));
+});
 
 // MongoDB Connection
 // mongoose.connect('mongodb://localhost:27017/portfolio', {

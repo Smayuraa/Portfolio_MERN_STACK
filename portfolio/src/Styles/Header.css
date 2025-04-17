@@ -1,0 +1,75 @@
+/* Full-width Transparent Navbar with Blurred Effect */
+.navbar {
+    background-color: rgba(8, 27, 41, 0.6) !important; /* Slightly dark transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; /* Ensures full width */
+    height: 10%;
+    z-index: 9999;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  /* Navbar links styling */
+  .navbar .nav-link {
+    color: #fff !important; /* White text color */
+    font-size: 1.7rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect on nav links */
+  .navbar .nav-link:hover {
+    color: var(--main-color) !important; /* Main color on hover */
+  }
+  
+  /* Logo styling */
+  .navbar .navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00A4E7;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .navbar-brand:hover {
+    color: var(--main-color) !important; /* Main color on hover */
+  }
+  
+  /* Navbar items alignment */
+  .navbar-nav {
+    align-items: center;
+  }
+  
+  /* Navbar items styling */
+  .navbar-nav .nav-item {
+    margin-left: 5px;
+  }
+  
+  /* Button-like Links (CV, Projects, etc.) */
+  .navbar .btnn {
+    background-color: var(--main-color);
+    padding: 8px 18px;
+    border-radius: 25px;
+    color: #fff !important;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar .btnn:hover {
+    background-color: #0299e8;
+    transform: translateY(-3px);
+  }
+  
+  /* Navbar collapse styles (responsive) */
+  .navbar-toggler-icon {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      background-color: rgba(8, 27, 41, 0.8) !important; /* Slightly darker transparent background on mobile */
+    }
+  }
+  
