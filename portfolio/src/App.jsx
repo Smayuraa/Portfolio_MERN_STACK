@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from "./components/Header";
@@ -7,9 +7,18 @@ import About from "./components/About";
 import Education from "./components/EducationItem";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import "./App.css"
+import Contact from './components/Contact';
+// import freelance from './components/FreelancingSection'
+import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []); 
+
   return (
     <div>
       <Header />
@@ -18,7 +27,8 @@ const App = () => {
       <Education />
       <Skills />
       <Projects />
-      {/* <Contact/> */}
+      {/* <freelance/> */}
+      <Contact />
     </div>
   );
 };

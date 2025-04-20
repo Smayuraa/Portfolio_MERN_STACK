@@ -38,9 +38,9 @@ const timelineData = {
     },
     {
       year: "2023",
-      title: "Java Internship: InternPe",
+      title: "Software Developer Intern - Numetry Technologies",
       description:
-        "Completed a Java internship with real-world assignments and mini-projects."
+        "Developed web applications using the MERN stack to improve data processing and user experience"
     }
   ]
 };

@@ -1,0 +1,36 @@
+.freelancing-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .technologies {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .tech-icon {
+    display: inline-block;
+  }
+  
+  .buttons .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 1.5rem;
+    }
+    .tech-icon {
+      margin-bottom: 20px;
+    }
+  }
+  

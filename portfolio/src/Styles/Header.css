@@ -1,75 +1,86 @@
-/* Full-width Transparent Navbar with Blurred Effect */
+/* Navbar Base Styles */
 .navbar {
-    background-color: rgba(8, 27, 41, 0.6) !important; /* Slightly dark transparent background */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%; /* Ensures full width */
-    height: 10%;
-    z-index: 9999;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  background-color: rgba(8, 27, 41, 0.6) !important;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar Brand (Logo) */
+.navbar .navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00A4E7;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+  color: var(--main-color);
+}
+
+/* Navbar Links */
+.navbar .nav-link {
+  color: #fff !important;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--main-color) !important;
+}
+
+/* CV Button */
+.navbar .btnn {
+  background-color: var(--main-color);
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.navbar .btnn:hover {
+  background-color: #0299e8;
+  transform: translateY(-3px);
+  color: #fff !important;
+}
+
+/* Mobile View Styling */
+@media (max-width: 991px) {
+  .navbar {
+    background-color: rgba(8, 27, 41, 0.85) !important;
+    padding: 12px;
   }
-  
-  /* Navbar links styling */
-  .navbar .nav-link {
-    color: #fff !important; /* White text color */
-    font-size: 1.7rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  /* Hover effect on nav links */
-  .navbar .nav-link:hover {
-    color: var(--main-color) !important; /* Main color on hover */
-  }
-  
-  /* Logo styling */
-  .navbar .navbar-brand {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #00A4E7;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar .navbar-brand:hover {
-    color: var(--main-color) !important; /* Main color on hover */
-  }
-  
-  /* Navbar items alignment */
+
   .navbar-nav {
-    align-items: center;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
   }
-  
-  /* Navbar items styling */
+
   .navbar-nav .nav-item {
-    margin-left: 5px;
+    margin: 10px 0;
   }
-  
-  /* Button-like Links (CV, Projects, etc.) */
+
+  .navbar .nav-link {
+    font-size: 1.1rem;
+  }
+
   .navbar .btnn {
-    background-color: var(--main-color);
-    padding: 8px 18px;
-    border-radius: 25px;
-    color: #fff !important;
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    width: 100%;
+    margin: 10px auto;
   }
-  
-  .navbar .btnn:hover {
-    background-color: #0299e8;
-    transform: translateY(-3px);
-  }
-  
-  /* Navbar collapse styles (responsive) */
-  .navbar-toggler-icon {
-    color: #fff;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar {
-      background-color: rgba(8, 27, 41, 0.8) !important; /* Slightly darker transparent background on mobile */
-    }
-  }
-  
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
