@@ -8,8 +8,6 @@ Check out my live portfolio here:
 
 ## 🛠 **Technologies & Skills**
 - **Frontend**: HTML, CSS, JavaScript, ReactJS, Bootstrap
-- **Backend**: Node.js, Express.js, MongoDB
-- **Others**: Java, Data Structures and Algorithms (DSA), Git & GitHub
 
 ## 📂 **Projects**
 Here are some of the projects I've worked on:
